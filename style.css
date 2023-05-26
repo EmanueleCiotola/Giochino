@@ -1,0 +1,9 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#gameCanvas {
+    border: 3px solid black;
+    margin-top: 3%; /* TODO non funziona bene */
+}
