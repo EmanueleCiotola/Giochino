@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         x: canvas.width / 2,
         y: canvas.height / 2,
         radius: 10,
-        color: "red",
+        color: "#ef233c",
         speed: 2,
         dx: 0,
         dy: 0
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (var i = 0; i < objects.length; i++) {
             context.beginPath();
             context.rect(objects[i].x, objects[i].y, objectSize, objectSize);
-            context.fillStyle = "blue";
+            context.fillStyle = "#267ec9";
             context.fill();
             context.closePath();
         }
@@ -139,10 +139,11 @@ document.addEventListener("DOMContentLoaded", function () {
         isPaused = !isPaused; // Inverte lo stato di pausa (da pausa a gioco e viceversa)
         if (isPaused == true) {
             buttonText.textContent = "Continua"
-        } else buttonText.textContent = "Pausa"
-
-        //TODO diminuire velocità pallina e ostacoli di 1.5 dopo la pausa e riaumentarla gradualmente in 3s
-        //TODO durante la pausa bloccare il timer di generazione di ostacoli
+            buttonText.classList.remove("notPaused");
+        } else {
+            buttonText.textContent = "Pausa"
+            buttonText.classList.add("notPaused");
+        }
     }
 
     function resetGame() {

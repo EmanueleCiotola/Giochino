@@ -8,14 +8,19 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <center>
-        <canvas id="gameCanvas" width="800" height="500"></canvas>
-        
-        <p>Punteggio: <span id="score">0</span></p>
-        
-        <button id="pauseButton">Gioca</button>
-        <button id="resetButton">Ricomincia</button>
-    </center>
+    <section style="min-height: 100%; background-color: #8d99ae;">
+        <center>
+            <canvas id="gameCanvas" width="800" height="500"></canvas>
+            
+            <p id="scoreText">Punteggio: <span id="score">0</span></p>
+            
+            <button id="pauseButton">Gioca</button>
+            <button id="resetButton">Ricomincia</button>
+        </center>
+    </section>
+    <section style="background-color: #edf2f4;">
+        <p style="color: #2b2d42; font-size: 20px; margin-top: 0; padding: 3% 50px 3% 50px; text-align: center;">Il seguente programma è stato realizzato da <span style="font-weight: bold;">Ciotola Emanuele</span> e <span style="font-weight: bold;">Pauciullo Pasquale</span>.<br><br>Utilizza i tasti <span style="color: #3ec300;">W</span>, <span style="color: #3ec300;">A</span>, <span style="color: #3ec300;">S</span> e <span style="color: #3ec300;">D</span> per muovere la pallina ed evitare gli ostacoli.<br>Il tasto <span style="color: #ff9f1c;">P</span> permette di mettere il gioco in pausa, mentre il tasto <span style="color: #d90429;">Esc</span> fa ricominciare la partita.<br>Per iniziare a giocare premi uno dei tasti direzionali o <span style="color: #3ec300;">Enter</span>. Quanto sarai bravo?</p>
+    </section>
         
         <script src="script.js"></script>
 </body>
