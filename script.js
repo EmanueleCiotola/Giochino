@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
         y: canvas.height / 2,
         radius: 10,
         color: "#ef233c",
-        speed: 3,
+        speed: 2,
         dx: 0,
         dy: 0
     };
 
     var objects = [];
     var objectSize = 40;
-    var objectSpeed = 3;
+    var objectSpeed = 2;
     var score = 0;
     var objectInterval = 3000;
 

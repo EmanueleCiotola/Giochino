@@ -28,12 +28,21 @@ html, body {
   }
 /* Fine Stile Scrollbar */
 
+#gameSection {
+    min-height: 100%;
+    background-color: #8d99ae;
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+}
+
 #gameCanvas {
     border: 3px solid #edf2f4;
     border-radius: 5px;
     background-color: #2b2d42;
     box-shadow: 0 0 50px 10px #2b2d42;
-    margin-top: 3%;
+    /* margin-top: 3%; */
 }
 
 #scoreText {
